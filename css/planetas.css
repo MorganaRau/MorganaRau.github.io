@@ -1,0 +1,346 @@
+
+/* documento de estilo de animações de orbita e imagens dos planetas*/
+
+
+/*animacao*/
+@keyframes spin{
+  0%{
+    transform: rotate(-360deg);
+  }
+  }
+
+  @keyframes ini{
+    0%{
+      transform:translateY(2rem) ;
+    }
+  }
+
+.container{
+ padding-top:30px;
+}
+ /*TERRA*/
+ .ter img{
+  min-width: 140px;
+  max-width:25%;
+}
+
+.ter{
+   position: absolute;
+   display:inline-flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+   /*config. display da imagem e local na tela*/
+ .terContainer{
+   
+   margin-left: 10%;
+   position:absolute;
+   display:table-row;
+ }
+ 
+ /*1 orbita de terra*/
+ .orbitTer1{
+   left:-80px;
+   position:relative;
+   animation: spin  12s linear infinite ;
+ 
+ }
+ 
+ /*display com hover*/
+ .orbitTer1 a {
+ margin:25px;
+ position :absolute;
+ }
+ 
+ .iconLinkedin{
+  color:dodgerblue;
+  border-radius: 50%;
+  background: white;
+  padding:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ .ter:hover p{
+  display: block;
+}
+
+
+/*JUPITER*/
+ /*tamanho maximo da imagem*/
+ .jup img{
+  min-width: 150px;
+  max-width: 25%;
+}
+
+
+
+/*configuracao do local da imagem*/
+.jup{
+  position: absolute;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  /*config. display da imagem e local na tela*/
+.jupContainer{
+  margin-left: 50%;
+  position:absolute;
+  display:table-row;
+}
+
+/*1 orbita de jupiter*/
+.orbitjup1{
+  left:-80px;
+  position:relative;
+  
+  animation: spin 10s infinite linear;
+  
+}
+
+/*display com hover*/
+.orbitjup1 p {
+  margin: 38px;
+  position :absolute;
+  display: none;
+}
+
+.jup:hover p{
+  display: block;
+}
+
+
+/*2 orbita de jupiter*/
+
+.orbitjup2 {
+  
+  left: -80px;
+  position:relative;
+  animation: spin 8s infinite linear reverse;
+}
+
+
+.orbitjup2 p {
+  margin:60px;
+  position :absolute;
+  display: none;
+ 
+}
+
+/*icone de jupiter*/
+
+#htmlIcon p{
+  border-radius: 50%;
+  background: rgb(111, 98, 255);
+  padding:10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ 
+}
+
+
+#cssIcon p{
+  border-radius: 50%;
+  background: rgb(242, 255, 98);
+  padding:10px;
+  padding-top: 20px;
+  padding-bottom: 20px;;
+ 
+}
+ 
+
+/*3a orbita de jupiter*/
+.orbitjup3 {
+  
+  left: -80px;
+  position:relative;
+  animation: spin 15s infinite linear reverse;
+}
+
+
+.orbitjup3 p {
+  margin:60px;
+  position :absolute;
+  display: none;
+ 
+}
+#jsIcon p{
+ border-radius: 50%;
+ background: rgb(250, 141, 39);
+ padding:10px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+ 
+
+
+/*MARTE*/
+
+/*tamanho maximo da imagem*/
+.mar img{
+  min-width: 90px;
+  max-width: 25%;
+}
+
+
+
+/*configuracao do local da imagem*/
+.mar{
+  position: absolute;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  /*config. display da imagem e local na tela*/
+.marContainer{
+  padding-top:35px;
+  margin-left: 30%;
+  position:absolute;
+  display:table-row;
+}
+
+/*1 orbita de marte*/
+.orbitmar1{
+  left:-50px;
+  position:relative;
+  animation: spin 8s infinite linear reverse;
+}
+
+/*display com hover*/
+.orbitmar1 a {
+ margin:30px;
+ position :absolute;
+ display: block;
+}
+#githubIcon a{
+  color:white;
+  border-radius: 50%;
+  background: rgb(165, 52, 165);
+  padding:10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+
+
+ /*SATURNO*/
+.sat img{
+  min-width: 180px;
+  max-width:25%;
+}
+.sat{
+   position: absolute;
+   display:inline-flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+   /*config. display da imagem e local na tela*/
+ .satContainer{
+   padding-top:50px;
+   margin-left: 70%;
+   position:absolute;
+   display:table-row;
+ }
+ 
+ /*1 orbita de saturno*/
+ .orbitsat1{
+  
+   left:-80px;
+   position:relative;
+   animation: spin 10s infinite linear reverse;
+ }
+ 
+ /*display com hover*/
+ .orbitsat1 p {
+  margin:50px;
+ position :absolute;
+ display: none;
+ }
+ 
+ .sat:hover p{
+   display: block;
+ }
+ 
+#javaIcon p{
+  border-radius: 50%;
+  background: rgb(255, 119, 141);
+  padding:10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+
+
+ 
+ /*2 orbita de saturno*/
+ .orbitsat2{
+  left:-80px;
+  position:relative;
+  animation: spin 8s infinite linear;
+}
+
+ .orbitsat2 p {
+  margin: 45px;
+  position :absolute;
+  display: none;
+  }
+
+  #phpIcon p{
+    border-radius: 50%;
+    background: rgb(103, 87, 247);
+    padding:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+  }
+ 
+  
+  
+/*3 orbita de saturno*/
+.orbitsat3{
+  left:-80px;
+  position:relative;
+  animation: spin 15s infinite linear reverse;
+}
+
+ .orbitsat3 p {
+ margin:55px;
+  position :absolute;
+  display: none;
+  }
+
+  #pythonIcon p{
+    border-radius: 50%;
+    background: rgb(244, 255, 92);
+    padding:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+  }
+  
+  
+
+ /*URANO*/
+.ura img{
+  min-width: 120px;
+  max-width:25%;
+}
+.ura{
+   position: absolute;
+   display:inline-flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+   /*config. display da imagem e local na tela*/
+ .uraContainer{
+   padding-top:85px;
+   margin-left: 85%;
+   position:absolute;
+   display:table-row;
+ }
+ 

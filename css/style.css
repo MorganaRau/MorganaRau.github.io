@@ -1,0 +1,285 @@
+/*documento de estilos principal do projeto*/
+
+html{
+    scroll-behavior: smooth;
+ overflow-x:hidden;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color:white;
+}
+body{
+    background-color:rgba(30, 30, 30, 1);
+    width:100%;
+    height:100%;
+    display:inline-block;
+    margin-top:30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/*MENU*/
+.menu{
+    list-style: none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    display:table;
+    table-layout: fixed;
+    padding-left:35%;
+}
+
+.subMenu{ 
+  display:inline-block;
+  margin-left:80px;
+}
+
+.subMenu a{
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    text-decoration: none;
+    font-size: larger;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+/*Animacao com hover*/
+.subMenu a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   transform: scale(0);
+}
+
+.subMenu a:hover::after{
+    transform: scale(1);
+}
+
+/*Titulo*/
+.titulo {
+    color:#ffffff;
+}
+/*ola etc*/
+.saudacao{
+    font-family: 'Rubik',sans-serif;
+    font-size: 30px;
+    margin-left:6%;
+}
+.info{
+    font-family: 'Rubik',sans-serif;
+    font-size: 20px;
+    padding-top: 35px;
+    margin-left:10%;
+    letter-spacing: 2px;
+}
+/*meu nome*/
+.tituloNom{
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 10px;
+    font-size: 45px;
+    margin-left:10%;
+}
+
+.tituloPro{
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    margin-left:5%;
+}
+
+/*sobre mim*/
+.sobre{
+  padding:5%;
+    font-size: 20px;
+    margin-top: 300px;
+    color:white;
+}
+
+.sobre p{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 25px;
+}
+/*projetos*/
+.projetos{
+    padding-left: 5%;
+    padding-right: 5%;
+    color:white;
+    font-size: 20px;
+    margin-top: 300px;
+    margin-top: 150px;
+}
+/*contato*/
+.contato{
+    padding-left: 20%;
+    color:white;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+/*cards de lista de projetos*/
+
+.lista{
+    list-style: none;
+    text-align: justify;
+}
+
+.lista li{
+    display: inline-block;
+}
+
+/*card de projeto*/
+.box{
+    border:solid rgba(58, 58, 58, 1);
+    background-color:  rgba(58, 58, 58, 1);
+    width:270px;
+    height:290px;
+    margin:3px;
+    position: relative;
+   max-height: 600px;
+}
+
+.box a{ 
+   text-decoration: none;
+   display: flex;
+}
+
+.box  p{
+position:absolute;
+padding:5%;
+font-size: 15px;
+}
+/*linguagens*/
+.box  h4{
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 40%;
+    padding-left:5%;
+    color:rgba(217, 155, 255, 1);
+    font-weight:600;
+}
+/*linguagens nomes*/
+.box h4 p{
+    font-weight:500;
+    color:white;
+    padding-left:5%; ;
+    font-size: 13px;
+    padding-top:25px;
+}
+/*titulo projeto*/
+.box a h3{
+    color:rgba(217, 155, 255, 1);
+    padding-top:15px;
+     padding-left: 5%;
+     font-size: 15px;
+}
+
+.box a h3:hover{
+    color:white;
+}
+/*icone github*/
+.box a i{
+     color:rgba(217, 155, 255, 1);
+    position: absolute;
+    padding-top: 30px;
+    right:10px;
+}
+
+/*links dos cards*/
+
+.box a i:hover{
+    color: #ffffff;
+}
+
+.lista > .box:hover{
+  bottom:15px;
+   box-shadow: 0px  8px rgba(217, 155, 255, 1);
+ 
+}
+
+/*contato*/
+
+.contato{
+    padding-top: 60px;
+    padding-left: 5%;
+}
+
+/*icones de contato*/
+.contatIcons p{
+     padding-left: 40px;
+     text-align: center;
+    display: inline-block;
+    color:rgba(217, 155, 255, 1);
+    
+}
+
+.contatIcons{
+ text-align: center;   
+}
+
+/*lista dos icones*/
+
+.contatIcons ul{
+    list-style: none;
+  text-align: center;
+  padding-left: 10px;
+}
+.contatIcons    li {
+      
+    display: inline-block;
+    padding-left: 30px;
+    text-align: center;
+   
+}
+
+.contato li a:hover{
+    color:rgba(217, 155, 255, 1);
+}
+
+/*linguagens icones*/
+
+.linguagens{
+    color:white;
+    padding-top: 100px ;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+.linguagens ul{
+   text-align: center;
+   margin-top: 100px ;
+}
+ /*lista de icones*/
+.linguagens li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+   text-align: center;
+
+}
+
+/*so uma linha*/
+.linha{
+   margin-top: 50px;
+    width: 100%;
+    border:solid rgb(157, 114, 184);
+}
+/*fim feito por*/
+footer{
+    text-align: center;
+    color:rgba(217, 155, 255, 1);
+    font-family: 'Rubik', sans-serif;
+    padding-top:20px;
+    padding-left: 5%;
+}
